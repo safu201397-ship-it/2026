@@ -1,14 +1,14 @@
 :root {
-  --primary-color: #0b3d91; /* I-Shou Blue replacing FCU Maroon */
+  --primary-color: #bf5700; /* Burnt Orange from banner.png */
   --bg-light-grey: #F5F5F5;
   --bg-white: #FFFFFF;
   --text-main: #333333;
   --text-light: #666666;
   --font-serif: 'Noto Serif TC', serif;
   --font-sans: 'Noto Sans TC', sans-serif;
-  --petal-coral: #FF7F50;
-  --petal-blue: #0b3d91;
-  --accent-teal: #4A90E2;
+  --petal-coral: #e67e22; /* Lighter Orange */
+  --petal-blue: #bf5700; /* Burnt Orange */
+  --accent-teal: #d35400; /* Darker Orange */
 }
 
 * {
@@ -148,7 +148,7 @@ body {
 .petal-dark {
   width: 15px;
   height: 15px;
-  background-color: #0b3d91; /* I-Shou dark blue */
+  background-color: var(--petal-blue); /* Match Burnt Orange */
   border-radius: 50% 0 50% 50%;
   transform: rotate(45deg);
 }
@@ -156,7 +156,7 @@ body {
 .petal-light {
   width: 15px;
   height: 15px;
-  background-color: #f28b66; /* Peach / Coral */
+  background-color: var(--petal-coral); /* Lighter Orange */
   border-radius: 50% 50% 50% 0;
   transform: rotate(45deg);
 }
@@ -332,7 +332,7 @@ body {
 .small-petal {
   width: 12px;
   height: 12px;
-  background-color: #f28b66; /* Light orange/peach petal */
+  background-color: var(--accent-color); /* Lighter orange petal */
   border-radius: 50% 50% 50% 0;
   transform: rotate(45deg);
   display: inline-block;
@@ -357,7 +357,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  background-color: #6d2839; /* Deep maroon */
+  background-color: var(--primary-color); /* Match banner */
   color: #fff;
   width: 100%;
   max-width: 1000px;
@@ -369,12 +369,12 @@ body {
   letter-spacing: 1px;
   text-decoration: none;
   transition: all 0.3s;
-  box-shadow: 0 15px 35px rgba(109, 40, 57, 0.2); /* subtle glow */
+  box-shadow: 0 15px 35px rgba(191, 87, 0, 0.2); /* subtle orange glow */
 }
 
 .banner-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 20px 40px rgba(109, 40, 57, 0.3);
+  box-shadow: 0 20px 40px rgba(191, 87, 0, 0.3);
 }
 
 .banner-btn .arrow {
